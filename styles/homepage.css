@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+}
+
+/* MENU BAR: */
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #008584;
+    font-size: 1em;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px 16px;
+    left: 75vw;
+    color: #F5F5F5;
+    position: relative;
+}
+
+nav img#logo{
+    width: 100px;
+    height: 100px;
+    display: absolute;
+    margin: 30px 0 0 40px;
+    border: 3px solid #A68069;
+    border-radius: 50%;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* EFEITO UNDERLINE COM ANIMAÇÃO: */
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    padding: 1px;
+    margin: 18px;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0; 
+    left: 0;
+    background-color: #F5F5F5;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::before{
+    transform: scaleX(.9);
+}
+
+nav ul li a:active{    
+    color: black;
+}
+
+#arduinoPlaca{
+    transform: rotate(39deg);
+    position: fixed;
+    z-index: -1;
+    margin: 7% 0 0 30%;
+    width: 800px;
+    /* height: 800px; */
+}
+
+header{
+    margin: 90px 50px;
+    color:#008584;
+}
+
+main{
+    margin: 0 0 0 50px;
+    color:#006666;;
+}
+
+header div.fraseInicial{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.5em;
+}
+
+main div.sobre{
+    font-weight: 800;
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+main div.apresentacao{
+    width: 50%;
+    font-size: 1.5em;
+}
+
+button.produtos{
+    border-radius: 10px;
+    width: 600px;
+    height: 50px;
+    margin: 20px 0 0 0;
+    background-color: #A68069;
+    color: #F5F5F5;
+    font-weight: 800;
+    font-size: .8em;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: block;
+}
+
+button.produtos:hover{
+    cursor: pointer;
+}
+
+/* button.produtos:active{
+
+} */
+
+img#proto{
+    position: fixed;
+    z-index: -1;
+    transform: rotate(70deg);
+    top: 65%;
+    right: 80%;
+}
