@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contato</title>
+</head>
+
+<body>
+
+    <ul>
+        <img id="logo" src="src/RabittinoLogo.png" alt="Imagem da logo do Web Site">
+        <li><a href="">HOME</a></li>
+        <li><a href="">PRODUTOS E SERVIÇOS</a></li>
+        <li><a href="">CONTATOS</a></li>
+        <li><a href="">CADASTRE-SE</a></li>
+        <li><a href="">LOGIN</a></li>
+    </ul>
+
+    <div class="container">
+        <h1>Contate-nos</h1>
+    </div>
+
+    <div class="formulario">
+        <form action="mailto:contato@rabittino.com.br" method="post" enctype="text/plain">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem</label>
+            <input type="text" id="mensagem" name="mensagem" required>
+            <button type="submit"><strong>Contate-nos</strong></button>
+        </form>
+    </div>
+
+    <div class="info">
+        <p><strong>Contato:</strong> <a href="mailto:contato@rabittino.com.br"
+                style="color: rgb(0 133 132); text-decoration: none;"><br>contato@rabittino.com.br</br></a></p><br></br>
+        <p><strong><span>Baseado em:</strong><br>Balneário Camboriú, <br>Santa Catarina</br></br></p>
+    </div>
+
+    <div class="socialmedia">
+        <a href="#"><img src="/src/logotipo-do-aplicativo-do-facebook 1.png" alt="Facebook" width="10" height="10" </a>
+            <a href="#"><img src="/src/instagram 1 (1).png" alt=" Instagram" width="10" height="10" </a>
+                <a href="#"><img src="/src/twitter (1) 1.png" alt="Twitter" width="10" height="10" </a>
+    </div>
+
+    <img id="hand" src="src/handarduino.png" alt="Imagem da Mão">
+    <img id="placa" src="src/placa.png" alt="Imagem da Placa">
+    <img id="menosemais" src="src/menosemais.png" alt="Imagem de Menos e Mais">
+
+    <div class="linha1"></div>
+    <div class="linha2"></div>
+</body>
+
+</html>
